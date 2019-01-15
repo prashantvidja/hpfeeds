@@ -7,11 +7,11 @@ import socket
 import struct
 import logstash
 
-HOST = '192.168.56.109'
+HOST = '127.0.0.1'
 PORT = 10000
-CHANNELS = ['test.events']
-IDENT = 'test1'
-SECRET = '12345'
+CHANNELS = ['']
+IDENT = ''
+SECRET = ''
 
 def main():
         try:
