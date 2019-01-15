@@ -18,7 +18,7 @@ def main():
                 hpc = hpfeeds.new(HOST, PORT, IDENT, SECRET)
                 glastopf_logger = logging.getLogger('python-logstash-logger')
                 glastopf_logger.setLevel(logging.INFO)
-                glastopf_logger.addHandler(logstash.LogstashHandler('192.168.56.107', 8070, version=1))
+                glastopf_logger.addHandler(logstash.LogstashHandler('127.0.0.1', 8070, version=1))
 
         except hpfeeds.FeedException, e:
                 print >>sys.stderr, 'feed exception:', e
